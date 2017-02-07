@@ -346,7 +346,7 @@ namespace WindowsFormsApplication1
             if (pictureSwordeq.Visible)
             {
 
-                if ((PlayerPicture.Left == pictureBat.Left) && (PlayerPicture.Top == pictureBat.Top))
+                if (Math.Abs(PlayerPicture.Left - pictureBat.Left)<=30 && Math.Abs(PlayerPicture.Top- pictureBat.Top) <= 30)
                 {
                     
                     
@@ -382,7 +382,7 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                if ((PlayerPicture.Left == pictureBat.Left) && (PlayerPicture.Top == pictureBat.Top))
+                if (Math.Abs(PlayerPicture.Left - pictureBat.Left) <= 30 && Math.Abs(PlayerPicture.Top - pictureBat.Top) <= 30)
                 {
 
                     HPBat -= 1;
